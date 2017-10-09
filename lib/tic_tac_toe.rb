@@ -37,12 +37,13 @@ def turn(board)
 end
 
 def current_player(board)
-   size_check = board.select { |token| token == "X" || token == "O" }
-   if size_check.length % 2 == 0
-     current_player = "X"
-   else current_player = "O"
-   end
- end
+  size_check = board.select { |token| token == "X" || token == "O" }
+  if size_check.length % 2 == 0
+    current_player = "X"
+  else current_player = "O"
+  end
+end
+
 
 
 # Define your WIN_COMBINATIONS constant
