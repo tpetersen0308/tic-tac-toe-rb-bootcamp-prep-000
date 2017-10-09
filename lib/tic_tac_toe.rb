@@ -3,6 +3,14 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
+def display_board(board)
+  puts " #{board[]} | #{board[]} | #{board[]} "
+  puts "-----------"
+  puts " #{board[]} | #{board[]} | #{board[]} "
+  puts "-----------"  
+  puts " #{board[]} | #{board[]} | #{board[]} "
+end
+  
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
                       [0, 1, 2],
@@ -49,4 +57,3 @@ def winner(board)
   else won?(board)
   end
 end
-
