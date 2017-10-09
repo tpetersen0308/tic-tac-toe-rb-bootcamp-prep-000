@@ -36,9 +36,10 @@ def turn(board)
 end
 
 def current_player(board)
-   if (board.select { |token| token == "X" || token == "O" }).length % 2 == 0
-     current_player == "X"
-   else current_player == "O"
+   size_check = board.select { |token| token == "X" || token == "O" }
+   if size_check.length % 2 == 0
+     current_player = "X"
+   else current_player = "O"
    end
  end
 
