@@ -23,7 +23,7 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
-def turn(board, current_player)
+def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   user_index = input_to_index(user_input)
@@ -35,6 +35,12 @@ def turn(board, current_player)
   end
 end
 
+def current_player(index)
+  if index % 2 == 0 
+    current_player = "X"
+  else current_player = "O"
+  end
+end
 
 
 # Define your WIN_COMBINATIONS constant
