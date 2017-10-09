@@ -7,10 +7,15 @@ def display_board(board)
   puts " #{board[]} | #{board[]} | #{board[]} "
   puts "-----------"
   puts " #{board[]} | #{board[]} | #{board[]} "
-  puts "-----------"  
+  puts "-----------"
   puts " #{board[]} | #{board[]} | #{board[]} "
 end
+
+def input_to_index()
+  index = gets.strip.to_i - 1
+end
   
+
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
                       [0, 1, 2],
