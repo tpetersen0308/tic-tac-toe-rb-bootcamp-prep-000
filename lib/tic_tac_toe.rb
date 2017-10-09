@@ -35,12 +35,12 @@ def turn(board)
   end
 end
 
-def current_player(index)
-  if index % 2 == 0 
-    current_player = "X"
-  else current_player = "O"
-  end
-end
+def current_player(board)
+   if (board.select { |token| token == "X" || token == "O" }).length % 2 == 0
+     current_player == "X"
+   else current_player == "O"
+   end
+ end
 
 
 # Define your WIN_COMBINATIONS constant
