@@ -14,7 +14,7 @@ end
 def input_to_index()
   index = gets.strip.to_i - 1
 end
-  
+
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
