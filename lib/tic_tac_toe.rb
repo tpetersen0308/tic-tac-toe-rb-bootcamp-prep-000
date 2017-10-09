@@ -44,7 +44,10 @@ def current_player(board)
   end
 end
 
-
+def turn_count(board)
+  count_check = board.select{ |token| token == "X" || token == "O" }
+  turns = count_check.length
+end
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
